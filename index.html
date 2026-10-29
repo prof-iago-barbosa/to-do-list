@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Lista de Tarefas</h1>
+    </header>
+    <main>
+        <div class="container">
+            <form id="formulario">
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="novaTarefa" placeholder="Insira o Titulo da sua Tarefa">
+                    <label for="novaTarefa">Nova Tarefa:</label>
+                </div>
+
+                <div class="form-floating">
+                    <input type="date" class="form-control" id="dataTarefa" placeholder="Insira a Data da sua Tarefa">
+                    <label for="dataTarefa">Data da Tarefa:</label>
+                </div>
+            
+                <div class="form-floating">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="descricao"></textarea>
+                    <label for="descricao">Descrição</label>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Adicionar Tarefa</button>
+            </form>
+            <div id="tarefas">
+                <p>Nenhuma tarefa adicionada!</p>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+    <script src="https://kit.fontawesome.com/59fb03335f.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="js/tarefas.js"></script>
+</body>
+
+</html>
